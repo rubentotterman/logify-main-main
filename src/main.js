@@ -13,10 +13,6 @@ const supabaseUrl = 'https://ynaebzwplirfhvoxrvnz.supabase.co'
 const supabaseKey = process.env.SUPABASE_KEY
 
 
-  if (!process.env.SUPABASE_KEY) {
-    console.warn("WARNING: Using hardcoded Supabase key. Ensure to use environment variables in production.");
-  }
-
   const supabase = createClient(supabaseUrl, supabaseKey, {
     auth: { persistSession: true },
   });
