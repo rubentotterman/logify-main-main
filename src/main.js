@@ -2,6 +2,7 @@ import "./main.css";
 import { createClient } from "@supabase/supabase-js";
 import { Chart, registerables } from "chart.js";
 
+
 Chart.register(...registerables);
 
 (() => {
