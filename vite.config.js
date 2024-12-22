@@ -16,5 +16,5 @@ export default defineConfig({
     open: true, // Automatically open the app in the browser
     port: 5500, // You can change the port number if needed
   },
-  base: './',  // Ensure assets are loaded from the root
+  base: './', // Ensure assets are loaded from the root
 });
