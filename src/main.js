@@ -3,14 +3,15 @@ import { createClient } from "@supabase/supabase-js";
 import { Chart, registerables } from "chart.js";
 
 
+
 Chart.register(...registerables);
 
 (() => {
-  // Supabase Initialization
-  const supabaseUrl = "https://ynaebzwplirfhvoxrvnz.supabase.co";
-  const supabaseKey =
-    process.env.SUPABASE_KEY ||
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InluYWViendwbGlyZmh2b3hydm56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQzMDg4NTAsImV4cCI6MjA0OTg4NDg1MH0.Ac6HePbKTdeCVDWAe8KIZOO4iXzIuLODWKRzyhqmfpA";
+ 
+
+const supabaseUrl = 'https://ynaebzwplirfhvoxrvnz.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+
 
   if (!process.env.SUPABASE_KEY) {
     console.warn("WARNING: Using hardcoded Supabase key. Ensure to use environment variables in production.");
